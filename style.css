@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+
+    font-size: 0.875rem;
+    font-family: inter, sans-serif;
+    background-color: var(--grey-900);
+    color: var(--white);
+}
+
+.social-media-links-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+
+    border-radius: 15px;
+    background-color: var(--grey-800);
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-info__image {
+    border-radius: 100%;
+
+    width: 30%;
+}
+
+.personal-info__name {
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.personal-info__location {
+    margin-top: 0px;
+    font-size: 0.9rem;
+    color: var(--green);
+
+
+}
+
+.personal-info__description {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 0.9rem;
+
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-link {
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 15px;
+
+    background-color: var(--grey-700);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.social-media-link:hover {
+    color: var(--green);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.social-media-link:last-child {
+    margin-bottom: 0;
+}
+
+.attribution {
+    margin-bottom: 10px;
+
+    position: absolute;
+    top: 95%;
+
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: 
+    hsl(228, 45%, 44%); 
+}
+
+@media(height < 700px) {
+    .social-media-links-card {
+        margin-bottom: 3rem;
+    }
+}
